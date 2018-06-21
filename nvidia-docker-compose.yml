@@ -1,0 +1,19 @@
+services:
+  sg_attention_ocr:
+    build: .
+    devices:
+    - /dev/nvidia0
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    - /dev/nvidia-uvm-tools
+    ports:
+    - 8887:8887
+    stdin_open: true
+    volumes:
+    - ./data/:/home/sg/data
+    - ./code/:/home/sg/code
+    - nvidia_driver_396.26:/usr/local/nvidia:ro
+version: '2'
+volumes:
+  nvidia_driver_396.26:
+    external: true
