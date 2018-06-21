@@ -1,0 +1,13 @@
+version: "2"
+services:
+    sg_attention_ocr:
+        build: .
+        stdin_open: true
+        ports:
+          - "8887:8887"
+        devices:
+          - /dev/nvidia0
+        volumes:
+          - ./data/:/home/sg/data
+          - ./code/:/home/sg/code
+
