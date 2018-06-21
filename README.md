@@ -23,9 +23,10 @@ tar zxf sample.tgz
 ```
 The port 8887 should be open on host machine for jupyter notebook.
 
-# Training and Testing commands:
+### Training and Testing commands:
 Assume you're in Attention-OCR directory.
-
+```
 python src/launcher.py --phase=test --visualize --data-path=/home/sg/data/evaluation_data/svt/test.txt --data-base-dir=/home/sg/data/evaluation_data/svt --log-path=log.txt --load-model --model-dir=/home/sg/data/model --output-dir=/home/sg/data/results
 
 python src/launcher.py --phase=test --visualize --data-path=evaluation_data/evaluation_data.txt --data-base-dir=evaluation_data --log-path=log.txt --load-model --model-dir=model --output-dir=results
+```
