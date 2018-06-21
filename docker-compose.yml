@@ -8,5 +8,5 @@ services:
         devices:
           - /dev/nvidia0
         volumes:
-          - ./data/:/home/sg/data
+          - ../../data/:/home/sg/data
 
