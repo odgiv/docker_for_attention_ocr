@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends git wget && \
         apt-get -y install cuda
 
 RUN pip install keras==1.0.1 jupyter tqdm
+
 WORKDIR /home/sg/
 RUN mkdir /home/sg/data && git clone https://github.com/da03/Attention-OCR.git
 
