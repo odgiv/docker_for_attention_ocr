@@ -9,5 +9,4 @@ services:
           - /dev/nvidia0
         volumes:
           - ./data/:/home/sg/data
-          - ./code/:/home/sg/code
 

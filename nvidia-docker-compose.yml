@@ -11,7 +11,6 @@ services:
     stdin_open: true
     volumes:
     - ./data/:/home/sg/data
-    - ./code/:/home/sg/code
     - nvidia_driver_396.26:/usr/local/nvidia:ro
 version: '2'
 volumes:
